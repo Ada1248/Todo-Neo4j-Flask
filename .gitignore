@@ -1,0 +1,5 @@
+config.py
+env/
+__pycache__/
+*.py[cod]
+app/__pycache__
