@@ -3,10 +3,10 @@ from wtforms import StringField, validators, SelectField, SubmitField
 from wtforms.validators import InputRequired, Length
 from py2neo import Graph, Node, Relationship
 from py2neo.matching import NodeMatcher
-from config import database_uri
+from config import database_uri, database_user, database_password
 import os
 
-graph = Graph(database_uri, auth=('u7pytel', '297881'))
+graph = Graph(database_uri, auth=(database_user, database_password))
 
 # graph = Graph(database_uri, auth=(os.environ.get("NEO4J_USERNAME"), os.environ.get("NEO4J_PASSWORD")))
 matcher = NodeMatcher(graph)

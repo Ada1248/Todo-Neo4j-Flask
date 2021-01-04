@@ -4,8 +4,6 @@ from flask import Flask, request, render_template, redirect, url_for
 from neo4j import GraphDatabase
 from flask_wtf import FlaskForm
 
-# driver = GraphDatabase.driver(uri="bolt://149.156.109.37:7687", auth=("u7pytel", "297881"))
-# session = driver.session()
 
 @app.route('/', methods=('GET', 'POST'))
 def index():
