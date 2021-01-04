@@ -1,8 +1,6 @@
 from app import app 
 from app.models import Task
 from flask import Flask, request, render_template, redirect, url_for
-from neo4j import GraphDatabase
-from flask_wtf import FlaskForm
 
 
 @app.route('/', methods=('GET', 'POST'))
